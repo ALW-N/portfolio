@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # Change if your default branch is different
+      - main
 
 jobs:
   build-and-push:
@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v2
 
       - name: Log in to Docker Hub
-        uses: docker/login-action@v3
+        uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
@@ -25,6 +25,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./client       # 👈 tell it where the Dockerfile is
+          file: ./client/Dockerfile  # 👈 explicitly point to the Dockerfile
           push: true
           tags: alwin11/portfolio-client:latest
