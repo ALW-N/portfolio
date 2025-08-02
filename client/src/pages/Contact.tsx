@@ -19,6 +19,8 @@ const Contact = () => {
         View / Download Resume
       </a>
 
+      <a>heloo</a>
+
       
     </section>
   );
