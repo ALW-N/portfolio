@@ -19,7 +19,7 @@ const Contact = () => {
         View / Download Resume
       </a>
 
-      <a>heloo</a>
+      <a>this is a test</a>
 
       
     </section>
