@@ -1,4 +1,3 @@
-
 const Contact = () => {
   return (
     <section
@@ -12,13 +11,15 @@ const Contact = () => {
       </p>
 
       <a
-        href="/Alwin_Tomy_Resume.pdf" // Place your resume file in the `public/` folder
+        href="/Alwin_Tomy_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition"
+        className="px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition mb-4"
       >
         View / Download Resume
       </a>
+
+      
     </section>
   );
 };
