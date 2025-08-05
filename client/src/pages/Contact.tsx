@@ -6,8 +6,8 @@ const Contact = () => {
     >
       <h2 className="text-3xl sm:text-4xl font-bold mb-6">Contact</h2>
       <p className="text-gray-300 mb-8 max-w-xl">
-        I'm always open to new opportunities, collaborations, or just a friendly
-        chat. Feel free to reach out or download my resume below.
+        I'm always open to new opportunities, collaborations, or just a friendly chat.
+        Feel free to reach out or download my resume below.
       </p>
 
       <a
@@ -19,14 +19,9 @@ const Contact = () => {
         View / Download Resume
       </a>
 
-      <a
-        href="https://www.linkedin.com/in/alwin-tomy1/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="px-6 py-3 border border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition"
-      >
-        Visit My LinkedIn
-      </a>
+      <a>this is a test_1</a>
+
+      
     </section>
   );
 };
