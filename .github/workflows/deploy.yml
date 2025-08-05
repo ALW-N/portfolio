@@ -25,7 +25,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./client       # 👈 tell it where the Dockerfile is
-          file: ./client/Dockerfile  # 👈 explicitly point to the Dockerfile
+          context: ./client       #  tell it where the Dockerfile is
+          file: ./client/Dockerfile  #  explicitly point to the Dockerfile
           push: true
           tags: alwin11/portfolio-client:latest
